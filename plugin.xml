@@ -3,13 +3,13 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-background-mode"
-        version="0.7.2">
+        version="1.0.0">
 
-    <name>BackgroundMode</name>
+    <name>MWBackgroundMode</name>
 
     <description>Prevent apps from going to sleep in background.</description>
 
-    <repo>https://github.com/katzer/cordova-plugin-background-mode.git</repo>
+    <repo>https://github.com/manuweb/cordova-plugin-background-mode.git</repo>
 
     <keywords>appplant, background</keywords>
 
@@ -22,9 +22,9 @@
 
     <!-- cordova -->
     <engines>
-        <engine name="cordova" version=">=3.0.0" />
-        <engine name="android-sdk" version=">=16" />
-        <engine name="windows-sdk" version=">=10.0.14393.0" />
+        <engine name="cordova" version="&gt;=3.0.0" />
+        <engine name="android-sdk" version="&gt;=16" />
+        <engine name="windows-sdk" version="&gt;=10.0.14393.0" />
     </engines>
 
     <!-- js -->
@@ -37,16 +37,11 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="BackgroundMode">
-                <param name="ios-package" value="APPBackgroundMode" onload="true" />
-                <param name="onload" value="true" />
+                <param name="ios-package" value="APPBackgroundMode" />
             </feature>
         </config-file>
 
-        <config-file target="*-Info.plist" parent="UIBackgroundModes">
-            <array>
-                <string>audio</string>
-            </array>
-        </config-file>
+
 
         <resource-file src="appbeep.wav" />
 
@@ -67,6 +62,7 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <preference name="KeepRunning" value="true" />
+            <preference name="AndroidLaunchMode" value="singleInstance"/>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
