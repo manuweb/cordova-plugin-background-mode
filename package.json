@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-background-mode",
-  "version": "0.7.2",
+  "version": "1.0.0",
   "description": "Prevent apps from going to sleep in background.",
   "cordova": {
     "id": "cordova-plugin-background-mode",
@@ -10,9 +10,9 @@
       "browser"
     ]
   },
-  "repository": {
+"repository": {
     "type": "git",
-    "url": "git+https://github.com/katzer/cordova-plugin-background-mode.git"
+    "url": "git+https://github.com/manuweb/cordova-plugin-background-mode.git"
   },
   "keywords": [
     "appplant",
@@ -39,7 +39,7 @@
   "author": "Sebastián Katzer",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/katzer/cordova-plugin-background-mode/issues"
+    "url": "https://github.com/manuweb/cordova-plugin-background-mode/issues"
   },
-  "homepage": "https://github.com/katzer/cordova-plugin-background-mode#readme"
+  "homepage": "https://github.com/manuweb/cordova-plugin-background-mode#readme"
 }
